@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Cinzel:wght@400..900&family=Oswald:wght@200..700&display=swap');
+:root{
+    --Dark-Gold: #8E793E;
+    --Light-Gold: #AD974F;
+    --Intellectual-Grey: #231F20;
+    --Light-Grey: #EAEAEA;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    background-color: #8E793E;
+    align-items: center;
+}
+header img{
+    width: 100vh;
+    
+}
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #231F20;
+    justify-content: center;
+    
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    
+    justify-content: space-evenly;    
+    align-items: center;
+}
+li {
+    float: left;
+    padding: 50px;
+    
+}
+li a {
+    display: block;
+    padding: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8E793E;
+}
+li a:hover{
+    color: #AD974F;
+    text-decoration: underline;
+}
+li a:active{
+    color: #EAEAEA;
+}
+
+#promo {
+    width: 100%;
+    height: 500px;
+    background-color:var(--Intellectual-Grey);
+    color: var(--Dark-Gold);
+}
+#promo img {
+    width: 500px;
+    height: 500px;
+    aspect-ratio: 1 / 1;
+}
+.main-promo{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-family: 'Oswald';    
+}
+.content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content>h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+    padding-left: 40px;
+}
+span{
+    margin:40px;
+    font-size: 42px;
+}
+
+span:hover {
+    animation: animateText 3s ease ;
+}
+.main-button{
+    background-color: var(--Dark-Gold);
+    font-family: 'Benthan';
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 600px;
+}
+.main-button:hover{
+    background-color: var(--Light-Gold);
+}
+#main-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+    background-color:#3f383a;
+    
+}
+.card {
+    background-color: var(--Intellectual-Grey);
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    color: var(--Dark-Gold);
+    border-radius: 8px;   
+    font-family: 'Oswald';
+}
+.card:hover {
+    width: 310px;
+    height: 360px;
+}
+.card>h2 {
+    margin: auto 20px auto 20px;
+}
+.card-img{
+    width: 300px;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+}
+.card-button{
+    background-color: var(--Dark-Gold);
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+    border: 1px solid #8E793E;
+    font-family: 'Benthan';    
+    font-size: 16px;
+    margin: 20px;
+    position: relative;
+    left: 180px;  
+}
+.card-button:hover{
+    background-color: #AD974F;
+}
+.about-us {
+    background-color: #231F20;
+    width: 100%;
+    height: 350px;
+    color: #AD974F;
+    font-family: 'Cinzel';
+    font-size: medium;
+    display: flex;
+    line-height: 1.6;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+footer{
+    background-color: var(--Dark-Gold);
+    display: flex;
+    align-items: center;
+    
+    flex-direction: row;
+}
+#footer-img {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-img>img {
+    width: 160px;
+    height: 160px;
+}
+#footer-info {
+    width: 70%;
+    height: 100px;
+    line-height: 1.6;
+    font-family: 'Cinzel';
+    color: #231F20;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+ion-icon {
+    width: 42px;
+    height: 42px;
+    margin: 20px;
+}
+
+/*Animations*/
+@keyframes animateText {
+    0%{color: #8E793E;} 
+    10%{color: #AD974F;}
+    20%{color: #EAEAEA;}
+    30%{color: #AD974F;}
+    40%{color: #EAEAEA;}
+    50%{color: #AD974F;}
+    60%{color: #8E793E;}
+    70%{color: #231F20;}
+    80%{color: #3f383a;}
+    90%{color: #8E793E;}
+    100%{color: #AD974F;}
+}
